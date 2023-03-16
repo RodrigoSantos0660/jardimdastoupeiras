@@ -5,6 +5,15 @@
 }
 :root{
 font-size: 62.5%;
+--delay-animation1: 600ms;
+--delay-animation2: 1300ms;
+--delay-animation3: 4000ms;
+--delay-animation4: 4600ms;
+--delay-animation5: 5300ms;
+--delay-animation6: 8000ms;
+--delay-animation7: 8600ms;
+--delay-animation8: 9300ms;
+--duracao-animation:700ms
 }
 body{
  display: flex;
@@ -33,43 +42,44 @@ position: relative;
 animation: aparecetoupeira1 700ms;
 }
 #buraco3{
-  animation: aparecetoupeira2 700ms;
-  animation-delay: 600ms;
+  animation: aparecetoupeira1 var(--duracao-animation);
+  animation-delay: var(--delay-animation1);
 }
 #buraco2{
-    animation: aparecetoupeira3 700ms;
-    animation-delay: 1300ms;   
-}
+    animation: aparecetoupeira1 var(--duracao-animation);
+    animation-delay: var(--delay-animation2);
+  }
+
 
 
 
   #buraco8{
-  animation: aparecetoupeira1-2 700ms;
-  animation-delay: 4000ms;
+  animation: aparecetoupeira1 var(--duracao-animation);
+  animation-delay: var(--delay-animation3);
   }
   #buraco7{
-    animation: aparecetoupeira2-2 700ms;
-    animation-delay: 4600ms;
+    animation: aparecetoupeira1 var(--duracao-animation);
+    animation-delay: var(--delay-animation4);
   }
   #buraco6{
-      animation: aparecetoupeira3-2 700ms;
-      animation-delay: 5300ms; 
+      animation: aparecetoupeira1 var(--duracao-animation);
+      animation-delay: var(--delay-animation5); 
   }
 
 
+  
   #buraco9{
-    animation: aparecetoupeira1-3 700ms;
-    animation-delay: 8000ms;
+    animation: aparecetoupeira1 var(--duracao-animation);
+    animation-delay:var(--delay-animation6);
     }
     #buraco10{
-      animation: aparecetoupeira2-3 700ms;
-      animation-delay: 8600ms;
+      animation: aparecetoupeira1 var(--duracao-animation);
+      animation-delay: var(--delay-animation7);
     }
     #buraco11{
-        animation: aparecetoupeira3-3 700ms;
-        animation-delay: 9300ms; 
+        animation: aparecetoupeira1 var(--duracao-animation);
+        animation-delay: var(--delay-animation8); 
     }
-
 
 @keyframes aparecetoupeira1{
     0%{
@@ -85,122 +95,7 @@ animation: aparecetoupeira1 700ms;
       opacity: 1;
     } 
   }
-  @keyframes aparecetoupeira2{
-    0%{
-    opacity: 0.5;
-    }
-    25%{
-      opacity: 1;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 1;
-    } 
-  }
-  @keyframes aparecetoupeira3{
-    0%{
-    opacity: 0.5;
-    }
-    25%{
-      opacity: 1;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 1;
-    } 
-  }
-
-
-  @keyframes aparecetoupeira1-2{
-    0%{
-    opacity: 0.6;
-    }
-    25%{
-      opacity: 1;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 1;
-    } 
-  }
-  @keyframes aparecetoupeira2-2{
-    0%{
-    opacity: 0.5;
-    }
-    25%{
-      opacity: 1;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 1;
-    } 
-  }
-  @keyframes aparecetoupeira3-2{
-    0%{
-    opacity: 0.5;
-    }
-    25%{
-      opacity: 1;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 1;
-    } 
-  }
   
-  @keyframes aparecetoupeira1-3{
-    0%{
-    opacity: 0.6;
-    }
-    25%{
-      opacity: 1;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 1;
-    } 
-  }
-  @keyframes aparecetoupeira2-3{
-    0%{
-    opacity: 0.5;
-    }
-    25%{
-      opacity: 1;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 1;
-    } 
-  }
-  @keyframes aparecetoupeira3-3{
-    0%{
-    opacity: 0.5;
-    }
-    25%{
-      opacity: 1;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 1;
-    } 
-  }
-
   @media(max-width:980px){
     .linha3{
     display: none;
